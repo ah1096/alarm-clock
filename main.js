@@ -12,10 +12,10 @@ function updateClock(){
         if(hr == 0){
             hr = 12;
         }
-        if(hr > 12({
+        if(hr > 12){
             hr = hr - 12;
             period = "PM";
-        }))
+        }
 
         var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
         var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
