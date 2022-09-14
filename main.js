@@ -9,6 +9,11 @@ function updateClock(){
         sec = now.getSeconds(),
         period = "AM";
 
+        Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n =0 + n);
+            return n;
+        }
+
         if(hr == 0){
             hr = 12;
         }
