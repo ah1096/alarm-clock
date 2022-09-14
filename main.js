@@ -4,11 +4,16 @@ function addZero(i) {
     return i;
 }
 
-//declare variables
+//declare variables; get time
+
+function getTime() {
 const date = new Date();
 let hours = addZero(date.getHours());
 let minutes = addZero(date.getHours());
 let seconds = addZero(date.getSeconds());
 
 //show the current time in 00:00:00 format
-let currentTime = hours + ":" + minutes + ":" + seconds;
+let currentTime = "Current time: " + hours + ":" + minutes + ":" + seconds;
+}
+
+console.log(currentTime()); 
