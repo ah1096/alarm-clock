@@ -3,7 +3,7 @@ function updateClock(){
     var dayname = now.getDay(),
         month = now.getMonth(),
         date = now.getDate(),
-        year = now.getFullYear,
+        year = now.getFullYear(),
         hr = now.getHours(),
         min = now.getMinutes(),
         sec = now.getSeconds(),
