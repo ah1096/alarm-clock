@@ -1,4 +1,4 @@
-/*clock function*/
+//////*clock function*//////
 
 function updateClock(){
     var now = new Date();
@@ -38,7 +38,7 @@ function initClock() {
     window.setInterval("updateClock()", 1);
 }
 
-/*alarm function*/
+//////*alarm function*//////
 
 let alarmTime = null;
 let alarmTimeout = null;
@@ -55,7 +55,7 @@ function setAlarm() {
 
         if (untilAlarm > currentTime) {
             const ringAlarm = untilAlarm.getTime() - currentTime.getTime();
-            alarmTimeout = setTimeout(() => alert("WAKE UP!!!"), ringAlarm);
+            alarmTimeout = setTimeout(() => alert("WAKE UP!!!"), ringAlarm); /*replace alert with audio file that loops until CLEAR button pressed?*/
             alert("Alarm set");
         }
     }
@@ -65,6 +65,7 @@ function clearAlarm() {
     if (alarmTimeout) {
         clearTimeout(alarmTimeout);
         alert("Alarm cleared");
+        /*if manage to add audio: figure out how to pause loop here*/
     }
 }
 
