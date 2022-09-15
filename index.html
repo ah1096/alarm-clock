@@ -6,7 +6,7 @@
 <body onload="initClock()">
 
   <div class = "alarmInput">
-    <input name="alarmTime" type="datetime-local">
+    <input name="alarmTime" type="datetime-local" onchange="setAlarmTime(this.value)">
   </div>
 
   <div class="controls">

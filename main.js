@@ -1,3 +1,5 @@
+/*clock function*/
+
 function updateClock(){
     var now = new Date();
     var dayname = now.getDay(),
@@ -34,4 +36,14 @@ function updateClock(){
 function initClock() {
     updateClock();
     window.setInterval("updateClock()", 1);
+}
+
+/*alarm function*/
+
+let alarmTime = null;
+let alarmTimeout = null;
+
+function setAlarmTime(value) {
+    alarmTime = value;
+    console.log(alarmTime);
 }
