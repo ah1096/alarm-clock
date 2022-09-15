@@ -16,6 +16,7 @@ body{
 
 }
 
+                                    /*buttons*/
 .btn{
     border: none;
     border-radius: 5px;
@@ -33,6 +34,8 @@ body{
     background-color: white;
     color: pink;
 }
+
+                                    /*clockface*/
 
 .datetime{
     color: white;
