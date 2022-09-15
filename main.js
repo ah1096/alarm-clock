@@ -47,3 +47,19 @@ function setAlarmTime(value) {
     alarmTime = value;
     console.log(alarmTime);
 }
+
+function setAlarm() {
+    if(alarmTime) {
+        const currentTime = new Date;
+        const untilAlarm = new Date(alarmTime);
+
+        if (untilAlarm > currentTime) {
+            const ringAlarm = untilAlarm.getTime() - currentTime.getTime();
+            alarmTimeout = setTimeout(() => alert("WAKE UP!!!"), ringAlarm);
+            alert("Alarm set");
+        }
+    }
+
+
+}
+
