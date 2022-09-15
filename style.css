@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+}
+
+.alarmInput{
+    /*modify the default CSS here to make the input less ugly?*/
+
+}
+
+                                    /*buttons*/
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+
+}
+
+.set {
+    background-color:rgb(101, 161, 99);
+    color: white;
+    margin-left: 4px;
+}
+
+.clear{
+    background-color: white;
+    color: pink;
+}
+
+                                    /*clockface*/
+
+.datetime{
+    color: white;
+    background:pink;
+    font-family: 'Courier New', Courier, monospace;
+    width: 340px;
+    padding: 20px 25px;
+    border: 3px solid rgb(101, 161, 99);
+    border-radius: 5px;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 60;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time span:last-child{
+    background:  rgb(101, 161, 99);
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 px;
+    border-radius: 3px;
+}

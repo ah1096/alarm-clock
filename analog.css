@@ -1,0 +1,6 @@
+/* figure out how to do the following:
+    - make a clock face w/hands in CSS
+    - get the hands to move according to hours, mins, secs
+    - make a button that will switch the clock face between digital and analog
+            + query selector to target stylesheet href 
+              and replace with analog/digital filename?

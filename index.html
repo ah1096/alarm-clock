@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="initClock()">
 
-  <h1>Alarm Clock</h1>
-  
-  <p>Hello!</p>
+  <div class = "alarmInput">
+    <input name="alarmTime" type="datetime-local" onchange="setAlarmTime(this.value)">
+  </div>
+
+  <div class="controls">
+      <button class="btn set" onclick="setAlarm()">Set Alarm</button>
+      <button class="btn clear" onclick="clearAlarm()">Clear Alarm</button> 
+  </div>
+
+  <div class="datetime">
+    <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynumber">00</span>,
+        <span id="year">Year</span>
+    </div>
+
+    <div class="time">
+      <span id="hour">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+      <span id="period">AM</span>
+    </div>
+
+  </div>
+    
   
 </body>
+<script src="main.js"></script>
 </html>
