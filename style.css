@@ -12,7 +12,25 @@ body{
 }
 
 .alarmInput{
-    
+    /*figure out how to make this cute*/
+
+}
+
+.set {
+    background-color:rgb(101, 161, 99);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: white;
+    margin-left: 4px;
+}
+
+.clear{
+    background-color: white;
+    border: 1px white;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: pink;
 }
 
 .datetime{

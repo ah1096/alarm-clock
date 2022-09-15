@@ -22,7 +22,7 @@ function updateClock(){
             period = "PM";
         }
 
-        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         var ids = ["dayname", "month", "daynumber", "year", "hour", "minutes", "seconds", "period"];
         var values = [weekdays[dayname], months[month], date.pad(2), year, hr.pad(2), min.pad(2), sec.pad(2), period];
