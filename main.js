@@ -59,7 +59,12 @@ function setAlarm() {
             alert("Alarm set");
         }
     }
+}
 
-
+function clearAlarm() {
+    if (alarmTimeout) {
+        clearTimeout(alarmTimeout);
+        alert("Alarm cleared");
+    }
 }
 
